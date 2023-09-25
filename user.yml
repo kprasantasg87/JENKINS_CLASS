@@ -1,0 +1,6 @@
+---
+- hosts: server
+    - name: user
+        user:
+          name: prasanta
+          state: present
