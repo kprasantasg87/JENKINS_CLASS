@@ -6,3 +6,7 @@
       yum:
         name: git
         state: present
+    - name: user creation
+      user:
+         name: prasanta
+         state: present
