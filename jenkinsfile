@@ -1,0 +1,15 @@
+pipeline{
+    agent any
+    stages{
+        stage('git checkout'){
+            steps{
+                git branch: 'main', credentialsId: 'jenkins', url: 'https://github.com/kprasantasg87/JENKINS_CLASS.git'
+            }
+        }
+        stage('shell execute'){
+            steps{
+                sh 'bash Test.sh'
+            }
+        }
+    }
+}
