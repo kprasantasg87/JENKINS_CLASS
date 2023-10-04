@@ -14,3 +14,7 @@
       yum:
         name: httpd
         state: present
+    - name: make up
+      service:
+        name: httpd 
+        state: started
