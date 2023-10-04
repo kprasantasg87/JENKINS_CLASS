@@ -10,7 +10,7 @@
       user:
          name: prasanta
          state: present
-     - name: httpd installation
-       yum:
-         name: httpd
-         state: present
+    - name: httpd installation
+      yum:
+        name: httpd
+        state: present
